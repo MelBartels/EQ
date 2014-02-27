@@ -1,0 +1,137 @@
+;created on Tue May 21 09:12:40 2002
+
+[*** display section ***]
+DefaultBackground 15
+DefaultColor 0
+TitleColor 0
+BorderColor 0
+MenuColor 0
+DisplayColor 0
+SelectColor 0
+CurrentColor 0
+SelectBackground 15
+ConfirmQuit 0
+MoveHsMsgDeg 10.000000
+
+[*** interface section ***]
+InterfacePath C:\GUIDE\
+
+[*** control section ***]
+UseMouseFlag 1
+IACA_Flag 0
+
+[*** mount section ***]
+AutoGEMFlip 0
+AutoGEMFlipFuzzDeg 7.500000
+Siderostat 0
+HomeAltDeg 0.000000
+HomeAzDeg 0.000000
+MsArcsecSec 300
+AltFullStepSizeArcsec 300.000000
+AzFullStepSizeArcsec 300.000000
+
+[*** Handpad section ***]
+HandpadPresentFlag 1
+StartingHandpadMode 2
+
+[*** backlash section ***]
+BacklashMsArcsecSec 500
+AltBacklashArcmin 0.000000
+AzBacklashArcmin 0.000000
+
+[*** limit move section ***]
+AltLowLimitDeg 0.000000
+AltHighLimitDeg 0.000000
+AzLowLimitDeg 0.000000
+AzHighLimitDeg 0.000000
+
+[*** guide section ***]
+GuideArcsecSec 5
+
+[*** focus section ***]
+FocusMethod 2
+ReverseFocusMotor 0
+FocusFastStepsSec 500
+FocusSlowStepsSec 100
+FocusPosition 12345
+
+[*** motor setup section ***]
+MotorControlMethod 0
+InvertOutput 0
+ReverseAMotor 0
+ReverseZMotor 0
+
+[*** halfstep section ***]
+HsRampStyle 1
+HsTimerFlag 1
+MaxDelay 1000
+MinDelay 500
+HsDelayX 2
+HsRampX 6
+InterruptHs 100
+HoldReps 20
+HsOverVoltageControl 0
+MaxConsecutiveSlews 5
+
+[*** microstep section ***]
+MsPowerDownSec 5
+PWMRepsTick 34
+AvgPWMRepsTickOnFlag 1
+MsDelayX 6
+MsPause 500
+Ms 20
+MaxIncrMsPerPWM 5
+MsHsToggleIncrMsPerPWM 5
+MaxPWM 100
+PWM[0] 100 : 0
+PWM[1] 100 : 27
+PWM[2] 100 : 37
+PWM[3] 100 : 46
+PWM[4] 100 : 54
+PWM[5] 100 : 62
+PWM[6] 100 : 69
+PWM[7] 100 : 77
+PWM[8] 100 : 86
+PWM[9] 100 : 94
+PWM[10] 100 : 100
+PWM[11] 94 : 100
+PWM[12] 86 : 100
+PWM[13] 77 : 100
+PWM[14] 69 : 100
+PWM[15] 62 : 100
+PWM[16] 54 : 100
+PWM[17] 46 : 100
+PWM[18] 37 : 100
+PWM[19] 27 : 100
+
+[*** parallel port section ***]
+PPortAddr 1
+
+[*** LX200 protocol input section ***]
+LX200ComPort 0
+LX200BaudRate 9600
+LX200MotionTimeoutSec 5
+LX200SlewHs 2000
+LX200_LongFormat 0
+
+[*** coordinate conversion section ***]
+Current.Alt 45.979167
+Current.Az 358.491667
+AccumMs.A 11035
+AccumMs.Z 86038
+InitOne 15.063992 0.000000 0.000000 0.000000 15.063992 
+InitTwo 285.063992 45.000000 45.000000 90.000000 15.063992 
+Z1Deg 0.000000
+Z2Deg 0.000000
+Z3Deg 0.000000
+
+[*** astronomical times section ***]
+LatitudeDeg 44.000000
+CMOS_RTC_Access 0
+LongitudeDeg 122.000000
+Tz 8.000000
+DST 0
+
+[*** test section ***]
+;TestString NoTest
+TestString NoTest

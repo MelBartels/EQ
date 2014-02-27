@@ -1,0 +1,61 @@
+; This is a test file that will step your motors
+; through a simulated Auto_scroll around the sky.
+; To use this test program :
+;
+;   #1 Start Scope.exe  
+;   #2 press "s" to see a list of the scroll files available
+;   #3 press the "letter" that is in front of "a_test.scr"
+;      This is usually the "a" key.  The name of the file
+;      will be displayed in the lower left hand of the screen
+;      as it is loaded into the program.  If you get it wrong
+;      just press "s" again and load the correct file.  You 
+;      can restart this test at any time by reloading the test
+;      file and going to step #4. 
+;   #4 press "b" to begin the program ..... the motors will 
+;      start moving instantly.  If no motors are moving, you 
+;      are either sitting at the first target already or something
+;      is wrong.
+;   #5 watch the lower left hand screen for what the system
+;      is doing at any given moment.  Every 5 seconds the motors
+;      should go from snail's pace (track mode) to haul butt 
+;      and get that next target pace (aquire mode).  
+;      
+;      You may want to concider first reseting  
+;      the system to ( Ra=13hrs / Dec=30deg )
+;      to reduce the amount of motor running time
+;      it will take to get to the first target in the test.
+;
+;      Each target in the test (after the first) will take 
+;      about 5 seconds to get to.  The pause is 5 seconds   
+;      between each target.  The motors will turn off at the
+;      end of the test.
+;
+;      The program will auto scroll and turn on the stepper
+;      motors (tracking mode) all by itself.  This is only 
+;      a test of the automated system.  Manual control of the 
+;      system would require you to delete the "Auto_scroll"
+;      command in the file and press the "l" key every time 
+;      you want to advance to the next line of the program.
+;
+;      Manual mode may require two clicks to get to the next 
+;      target in the list.  One to move the motors and one to 
+;      execute the pause command and see the message
+;
+;
+;      The program start with the next line of programing code
+;
+auto_scroll
+trackon
+a 12  57  30  28  29  0  15  Stepping to NGC 4841A 
+o  0   0   0   0   0  0  5   first Pause @ 1/5 
+a 12  56  12  27  45  0  5   Stepping to NGC 4816
+o  0   0   0   0   0  0  5   5 sec Pause @ 2/5 
+a 12  56  42  27  11  0  5   Stepping to NGC 4827
+o  0   0   0   0   0  0  5   5 sec Pause @ 3/5 
+a 12  57  24  27  30  0  5   Stepping to NGC 4839
+o  0   0   0   0   0  0  5   5 sec Paus @ 4/5 
+a 12  59  36  27  58  0  5   Stepping to NGC 4874
+o  0   0   0   0   0  0  5   last Pause@ 5/5 
+trackoff
+
+;   program complete

@@ -1,0 +1,36 @@
+;a scroll file is a series of coordinates such that the
+;scope will smoothly and slowly microstep or scroll from
+;one coordinate to the next
+
+;keep the distances between coordinates small and the times
+;to scroll large so that the scope won't slew
+
+;line format:
+
+;start line with either letter 'a' for absolute coordinates
+;or letter 'o' for offset coordinates
+
+;then follow with: <ra-hr> <ra-min> <ra-sec> <dec-deg> <dec-min>
+<dec-sec> <time> <time for move to occur over> <comment>
+
+;to run, load the file, set handpad mode to scroll tour,
+;then flip mode switch to the left;
+
+;if switch flipped back to center position immediately,
+;the scope will scroll to the next coordinates, then mark
+;time by tracking;
+
+;if switch remains flipped to the left, then there is no
+;pause between coordinates
+
+
+
+a  23  0  0 15  10  0  10   abs: 10 sec
+o   0  0  0  0  10  0   5   off: 10' in Dec, 5 sec
+o   0  0  0  0  10  0   8   off: 10' in Dec, 8 sec
+o   0  0  0  0 -10  0   7   off: 10' in Dec, 7 sec
+o   0  0  0  0 -10  0   4   off: 10' in Dec, 4 sec
+
+
+
+;end

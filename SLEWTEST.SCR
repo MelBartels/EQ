@@ -1,0 +1,14 @@
+;trackon
+abs_altaz 70 170 0 alt 70 az 170
+abs_altaz 60 160 0 alt 60 az 160
+abs_altaz 50 150 0 alt 50 az 150
+abs_altaz 40 140 0 alt 40 az 140
+abs_altaz 30 130 0 alt 30 az 130
+abs_altaz 20 120 0 alt 20 az 120
+abs_altaz 10 110 0 alt 10 az 110
+abs_altaz 30 130 0 alt 30 az 130
+abs_altaz 50 150 0 alt 50 az 150
+abs_altaz 70 170 0 alt 70 az 170
+abs_altaz 80 180 0 alt 80 az 180
+;trackoff
+

@@ -1,0 +1,9 @@
+set_altaz Set current Alt Az
+abs_altaz 30 240 0 ALT30 AZ240
+data_file bstars.dat
+1i
+abs_altaz 30 160 0 ALT30 AZ160
+data_file bstars.dat
+2i
+alt_offset altitude offset
+trackon
